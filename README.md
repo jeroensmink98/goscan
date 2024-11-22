@@ -14,23 +14,6 @@ GoScan is a Go-based application designed to scan specified hosts and IP ranges 
 - [Go](https://golang.org/dl/) installed on your system.
 - [Nmap](https://nmap.org/download.html) installed, as the application utilizes Nmap for scanning.
 
-## Installation
-
-1. Clone the repository:
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd goscan
-   ```
-
-3. Install the required Go packages:
-
-   ```bash
-   go get github.com/Ullaakut/nmap/v2
-   go get github.com/fatih/color
-   ```
-
 ## Configuration
 
 Create a `servers.json` file in the project directory to specify the targets and ports:
