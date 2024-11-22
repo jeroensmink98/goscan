@@ -63,23 +63,9 @@ Create a `servers.json` file in the project directory to specify the targets and
    ./goscan
    ```
 
-
 The application will read the `servers.json` file, perform the scan, and display the results in the console with colored output. Detailed results will be appended to `scan_results.txt`.
 
-
-In Nmap scan results, each port on a host is assigned a status that indicates its accessibility and the presence of services. The example provided:
-
-yaml
-Code kopiëren
-Host: 195.216.246.52
-  Port 22/tcp: filtered (ssh)
-  Port 80/tcp: open (http)
-  Port 443/tcp: open (https)
-Explanation of Port Statuses:
-
-Open: The port is accessible, and a service is actively listening for connections. For instance, Port 80/tcp: open (http) indicates that the HTTP service is running and reachable on port 80.
-
-Filtered: Nmap cannot determine whether the port is open because packet filtering prevents its probes from reaching the port. This often results from firewall rules or network security devices that block the probes. In the example, Port 22/tcp: filtered (ssh) suggests that access to the SSH service on port 22 is restricted, likely by a firewall.
+In Nmap scan results, each port on a host is assigned a status that indicates its accessibility and the presence of services.
 
 Common Port Statuses Recognized by Nmap:
 
